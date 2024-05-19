@@ -10,5 +10,5 @@ for i in seq:
     elif i == 2:
         l1, l2 = not l1, not l2
 
-l1, l2 = int(l1), int(l2)
-print(f'{l1}\n{l2}')
+print(int(l1))
+print(int(l2))
