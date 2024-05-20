@@ -1,6 +1,4 @@
-s = str(input())
-li = s.split(' ')
-li = [ int(li[i]) for i in range(len(li)) ]
+li = map(int, input().split(' '))
 
 max_seen = li[0]
 

@@ -1,9 +1,8 @@
 n = int(input())
-linhas = list()
 smatch = list()
 
 for i in range(n):
-    linhas.append(input())
+    linhas = input()
     for c in linhas[i]:
         if c == '{':
             smatch.append(1)
