@@ -19,7 +19,7 @@ main(void)
         size_t j = 0;
 	while (i < nd) {
 		somatmp = somatmp + disparos[i];
-                while (somatmp > objetivo) {
+                while (somatmp > objetivo) { /* thx brennon */
                         somatmp -= disparos[j];
 			++j;
                 }
