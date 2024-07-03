@@ -13,7 +13,7 @@ undone	: nada
 Semana 2:
 
 
-acc	: A, B, C
+acc	: A, B, C, E
 wa	: nada
 tle	: nada
 undone	: resto
