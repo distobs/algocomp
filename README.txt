@@ -13,7 +13,7 @@ undone	: nada
 Semana 2:
 
 
-acc	: A, B
+acc	: A, B, C
 wa	: nada
 tle	: nada
 undone	: resto
@@ -26,7 +26,7 @@ Semana 3:
 acc	: nada
 wa	: nada
 tle	: nada
-undone	: tudo
+undone	: The Tao does nothing, but leaves nothing undone.
 -------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------
