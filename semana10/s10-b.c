@@ -1,8 +1,21 @@
+int trib[38] = {
+        [0] = 0,
+        [1] = 1,
+        [2] = 1
+};
+
 int
 tribonacci(int n)
 {
-    if (n == 0) return n;
-    else if (n == 1 || n == 2) return 1;
+        unsigned i = 3;
 
-    return tribonacci(n - 1) + tribonacci(n - 2) + tribonacci(n - 3);
+        if (n == 0) return 0;
+        else if (n == 1 || n == 2) return 1;
+
+        while (i <= n) {
+                trib[i] = trib[i - 1] + trib[i - 2] + trib[i - 3];
+                ++i;
+        }
+
+        return trib[i - 1];
 }
