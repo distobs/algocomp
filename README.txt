@@ -79,7 +79,7 @@ undone	: resto
 
 -------------------------------------------------------------------------------
 Semana 10:
-acc	: A, B
+acc	: A, B, E
 wa	: nada
 tle	: nada
 undone	: resto
