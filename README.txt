@@ -87,7 +87,7 @@ undone	: resto
 
 -------------------------------------------------------------------------------
 Semana 11:
-acc	: D
+acc	: A, D
 wa	: nada
 tle	: nada
 undone	: resto
