@@ -71,7 +71,7 @@ undone	: resto
 
 -------------------------------------------------------------------------------
 Semana 9:
-acc	: A
+acc	: A, B
 wa	: nada
 tle	: nada
 undone	: resto
