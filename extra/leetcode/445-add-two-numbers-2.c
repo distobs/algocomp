@@ -1,8 +1,5 @@
 /* runtime vergonhoso */
 
-int stk1[100], stk2[100], stk3[100];
-int sp1, sp2, sp3;
-
 void
 ltostk(int stk[static 100], int *sp, struct ListNode *head)
 {
@@ -34,6 +31,9 @@ stktol(int stk[static 100], int sp)
 }
 
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
+  int stk1[100], stk2[100], stk3[100];
+  int sp1, sp2, sp3;
+
     sp1 = sp2 = sp3 = -1;
     ltostk(stk1, &sp1, l1);
     ltostk(stk2, &sp2, l2);
