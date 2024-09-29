@@ -1,35 +1,34 @@
-/* incrivel q so da merda com o diabo do fsanitizer */
 #include <bits/stdc++.h>
 
 using namespace std;
 
-int
-main(void)
+vector<vector<int>> generate(int nr)
 {
-	int nrows;
+	vector<vector<int>> pascal(nr);
 
-	cin >> nrows;
+	for (int i = 0; i < nr; ++i) {
+		pascal[i] = vector<int>(i + 1);
+	}
 
-	vector<vector<int>> triangle(nrows);
+	pascal[0][0] = 1;
 
-	triangle[0].push_back(1);
-	triangle[1].push_back(1);
-	triangle[1].push_back(1);
+	if (nr == 1) {
+		return pascal;
+	} else {
+		pascal[1][0] = 1;
+		pascal[1][1] = 1;
+	}
 
-	for (size_t i = 2; i < nrows; ++i) {
-		triangle[i].push_back(1);
-		for (size_t j = 1; j <= i; ++j) {
-			size_t tmp = triangle[i - 1][j] + triangle[i - 1][j - 1];
-			triangle[i].push_back(tmp);
+	for (int i = 2; i < nr; ++i) {
+		for (int j = 0; j < (i + 1); ++j) {
+			if (j == 0 || j == i) {
+				pascal[i][j] = 1;
+			} else {
+				pascal[i][j] = pascal[i-1][j-1] +
+					pascal[i-1][j];
+			}
 		}
 	}
 
-	for (vector<int> vec : triangle) {
-		for (int elm : vec) {
-			cout << elm << " ";
-		}
-		cout << "\n";
-	}
-
-	return 0;
+	return pascal;
 }
