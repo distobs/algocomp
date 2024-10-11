@@ -2,6 +2,10 @@
 // Stole this solution from the editorial for learning purposes, since my last
 // solution was not exactly the most performant one.
 
+#include <bits/stdc++.h>
+
+using namespace std;
+
 class Solution {
 public:
 	vector<int>
@@ -21,15 +25,15 @@ public:
 		// lambda function for comparison between elements in the map
 		auto comp = [&count_map](int n1, int n2)
 		{
+			// sorts by frequency (least frequent on top of heap)
 			return count_map[n1] > count_map[n2];
 		};
 
-		// leetcode makes the vector<int> underlying type explicit for
-		// some reason. decltype finds out comp's type
 		priority_queue<int, vector<int>, decltype(comp)> heap(comp);
 
 		for (pair<int, int> p : count_map) {
 			heap.push(p.first);
+			// remove least frequent element on top
 			if (heap.size() > k) heap.pop();
 		}
 
