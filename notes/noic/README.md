@@ -6,17 +6,23 @@ Anotações e códigos do Roteiro de Estudos do NOIC para a OBI
 
 https://noic.com.br/materiais-informatica/roteiro-de-estudos/
 
+# Exercícios para completar
+
+- [ ] Gergovia
+
+- [ ] Ferris
+
+- [ ] Chimp
+
+- [ ] Cozinha
+
 # Progresso
 
 ## NJ
 
 - [x] Binary Search
 
-- [ ] Guloso
-
-	- [x] Teoria
-
-	- [ ] Resolução de problemas
+- [x] Guloso
 
 - [ ] Prefix Sum
 
