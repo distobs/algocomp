@@ -16,6 +16,8 @@ https://noic.com.br/materiais-informatica/roteiro-de-estudos/
 
 - [ ] Cozinha
 
+- [ ] Segredo do Cofre (OBI 17)
+
 # Progresso
 
 ## NJ
@@ -24,11 +26,13 @@ https://noic.com.br/materiais-informatica/roteiro-de-estudos/
 
 - [x] Guloso
 
-- [ ] Prefix Sum
+- [x] Prefix Sum
 
-- [ ] História dos Grafos
+- [x] História dos Grafos
 
 - [ ] Busca em Grafos
+
+- [ ] Two Pointers
 
 ## N1
 
