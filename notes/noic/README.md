@@ -8,7 +8,7 @@ https://noic.com.br/materiais-informatica/roteiro-de-estudos/
 
 # Exercícios para completar
 
-- [ ] Gergovia
+- [ ] Gergovia (chato demais)
 
 - [ ] Ferris
 
@@ -16,7 +16,8 @@ https://noic.com.br/materiais-informatica/roteiro-de-estudos/
 
 - [ ] Cozinha
 
-- [ ] Segredo do Cofre (OBI 17)
+- [ ] Segredo do Cofre (OBI 17) (tomei TLE)
+(o que isso tem a ver com prefix sum?)
 
 # Progresso
 
