@@ -3,12 +3,11 @@
 using namespace std;
 
 void
-bfs(vector<vector<int>> &g, int sz)
+bfs(vector<vector<int>> &g, vector<bool> &vis, int vini)
 {
-	vector<bool> vis(sz, false);
 	queue<int> q;
 
-	q.push(0);
+	q.push(vini);
 
 	int v;
 
@@ -31,15 +30,16 @@ bfs(vector<vector<int>> &g, int sz)
 	cout << endl;
 }
 
+// bfs on possibly disconnected graph
 int
 main(void)
 {
 	/*
 	                0
 		       / \
-		     1     2
-		    / \   / \
-		   3   4 5   6
+		     1     2              12 --- 13
+		    / \   / \              \     |
+		   3   4 5   6              14--15
 		  /    |      \
 		 7--8--9--10--11
 	 */
@@ -57,9 +57,19 @@ main(void)
 		{8, 4, 10},	// 9
 		{9, 11},	// 10
 		{10, 6},	// 11
+		{13, 14},	// 12
+		{12, 15},	// 13
+		{12, 15},	// 14
+		{13, 14},	// 15
 	};
 
-	bfs(graph, graph.size());
+	vector<bool> vis(graph.size(), false);
+
+	for (int i = 0; i < graph.size(); ++i) {
+		if (!vis[i]) {
+			bfs(graph, vis, i);
+		}
+	}
 
 	return 0;
 }

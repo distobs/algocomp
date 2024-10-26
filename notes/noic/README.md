@@ -19,6 +19,10 @@ https://noic.com.br/materiais-informatica/roteiro-de-estudos/
 - [ ] Segredo do Cofre (OBI 17) (tomei TLE)
 (o que isso tem a ver com prefix sum?)
 
+# Afazeres
+
+- [ ] Flood Fill com BFS
+
 # Progresso
 
 ## NJ
