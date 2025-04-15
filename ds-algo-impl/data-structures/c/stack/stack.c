@@ -3,7 +3,7 @@
 
 /* stack_destroy:
  * This function "destroys" the stack, freeing its contents and resetting its
- * original values. This is also the 'c' command. */
+ * original values. */
 void
 stack_destroy(struct stack *s)
 {
