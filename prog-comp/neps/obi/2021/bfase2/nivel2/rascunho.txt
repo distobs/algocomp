@@ -1,0 +1,41 @@
+Rascunho do algoritmo para a resolução da lista palíndroma.
+
+Para a construção deste algoritmo, analisemos três casos-exemplo:
+
+1. [1, 6, 2, 4, 1];
+
+2. [1, 6, 2, 4, 6, 1];
+
+3. [3, 10, 40, 30, 20, 3];
+
+--- O PRIMEIRO CASO ---
+
+No primeiro caso, segue-se uma rotina simples de comparar os números
+opostos.
+
+1 - 1. OK.
+
+6 - 4. Errado.
+
+Ao encontrar-se um erro, decide-se o menor: 4. Tenta-se somar com os números
+adjacentes até que o resultado seja igual ao oposto do menor. 4 + 2 = 6. O
+número 6 substitui o elemento 2 e o número 4 some, nos dando o array:
+
+[1, 6, 6, 1]
+
+Como a condição palindrômica é:
+
+L[i] = L[N - i + 1]
+
+e estamos em i = 3, teremos:
+
+L[3] = L[2].
+
+Quando não vemos mais quebras até o fim do array, encerramos o algoritmo.
+
+Ver a possibilidade de terminar na metade.
+
+--- O SEGUNDO CASO ---
+
+O segundo caso é igual, mas, ultimamente, compara-se o item do meio (6) ao
+próprio item do meio.
